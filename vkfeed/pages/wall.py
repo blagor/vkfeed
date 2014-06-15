@@ -74,7 +74,7 @@ class WallPage(webapp2.RequestHandler):
 
                 cur_time = int(time.time())
                 latency = constants.MINUTE_SECONDS
-                min_timestamp = cur_time - constants.WEEK_SECONDS
+                min_timestamp = cur_time - constants.YEAR_SECONDS
 
                 ## This confuses Google Reader users because it always requests
                 ## feeds with 'Cache-Control: max-age=3600' when adding
