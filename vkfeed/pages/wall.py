@@ -113,7 +113,7 @@ class WallPage(webapp2.RequestHandler):
 
                 try:
                     data = wall_reader.read(profile_name,
-                        min_timestamp, max_posts_num, foreign_posts, show_photo,
+                        0, 10000, foreign_posts, show_photo,
                         hash_tag_title, text_title, big_photos)
                 except wall_reader.ConnectionError as e:
                     http_status = httplib.BAD_GATEWAY
